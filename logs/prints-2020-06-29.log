@@ -1,0 +1,8 @@
+23:38:24.541 [main] INFO  Resources.BaseClass - Driver is Intialize
+23:38:36.695 [main] INFO  Resources.BaseClass - Navigated to HomePage
+23:38:37.286 [main] INFO  Resources.BaseClass - Clicked on Dismiss Button.
+23:38:38.354 [main] INFO  Resources.BaseClass - Clicked on login link text.
+23:38:38.859 [main] INFO  Resources.BaseClass - Enter UserName.
+23:38:39.053 [main] INFO  Resources.BaseClass - Enter Password
+23:38:39.053 [main] INFO  Resources.BaseClass - Test3
+23:38:39.082 [main] INFO  Resources.BaseClass - Clicked on Login Button.

@@ -1,0 +1,8 @@
+19:00:37.499 [main] INFO  Resources.BaseClass - Enter UserName.
+19:00:37.732 [main] INFO  Resources.BaseClass - Enter Password
+19:00:37.733 [main] INFO  Resources.BaseClass - Test3
+19:00:37.760 [main] INFO  Resources.BaseClass - Clicked on Login Button.
+19:00:43.859 [main] INFO  Resources.BaseClass - Driver is Intialize
+19:01:02.748 [main] INFO  Resources.BaseClass - Navigated to HomePage
+19:01:02.892 [main] INFO  Resources.BaseClass - Successfully Validated NavBar.
+19:01:09.070 [main] INFO  Resources.BaseClass - Driver is Intialize

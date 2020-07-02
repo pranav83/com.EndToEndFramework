@@ -1,0 +1,8 @@
+23:38:39.880 [main] INFO  Resources.BaseClass - chrome
+23:38:45.176 [main] INFO  Resources.BaseClass - Driver is Intialize
+23:38:58.050 [main] INFO  Resources.BaseClass - Navigated to HomePage
+23:38:58.183 [main] INFO  Resources.BaseClass - Successfully Validated NavBar.
+23:38:58.979 [main] INFO  Resources.BaseClass - chrome
+23:39:04.355 [main] INFO  Resources.BaseClass - Driver is Intialize
+23:39:21.177 [main] INFO  Resources.BaseClass - Navigated to HomePage
+23:39:21.375 [main] INFO  Resources.BaseClass - Successfully Validated Title.

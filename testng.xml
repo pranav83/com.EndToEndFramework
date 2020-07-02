@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="EndTOEndFramework.Listeners"></listener>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Homepage">
+        <classes>
+            <class name="EndTOEndFramework.HomePage">
+                <methods>
+                    <include name="basePageNavigation"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="ValidateNavBarr">
+    <classes>
+            <class name="EndTOEndFramework.ValidateNavBar">
+                <methods>
+                    <include name="navbarValidate"/>
+                </methods>
+            </class>
+    </classes>
+    </test>
+    <test name="ValidateTitle">
+        <classes>
+            <class name="EndTOEndFramework.ValidateTitle">
+                <methods>
+                    <include name="titleValidate"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
