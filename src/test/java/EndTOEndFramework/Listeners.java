@@ -16,9 +16,11 @@ import java.io.IOException;
 public class Listeners extends BaseClass implements ITestListener {
     ExtentTest test;
     ExtentReports extent = ExtentReportNG.getReportObject();
+    ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
     @Override
     public void onTestStart(ITestResult result) {
        test =  extent.createTest(result.getMethod().getMethodName());
+       extentTest.set(test);
 
     }
 
@@ -30,7 +32,7 @@ public class Listeners extends BaseClass implements ITestListener {
     @Override
     public void onTestFailure(ITestResult result) {
     //Lets create screenshot method here
-        test.fail(result.getThrowable());
+        extentTest.get().fail(result.getThrowable());
         WebDriver driver = null;
         String testMethodName = result.getMethod().getMethodName();
         try {
@@ -39,7 +41,8 @@ public class Listeners extends BaseClass implements ITestListener {
             e.printStackTrace();
         }
         try {
-            getScreenShot(testMethodName, driver);
+            extentTest.get().addScreenCaptureFromPath(getScreenShot(testMethodName, driver),result.getMethod().getMethodName());
+            
         } catch (IOException e) {
             e.printStackTrace();
         }

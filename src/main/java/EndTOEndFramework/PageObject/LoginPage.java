@@ -10,28 +10,30 @@ public class LoginPage {
 
     public WebDriver driver;
 
-    By email = By.id("username");
-    By password = By.id("password");
-    By loginButton = By.xpath("//button[contains(text(),'Login')]");
-    By  closeButton = By.xpath("//button[contains(@class,'btn btn btn-mega')]");
+    private By email = By.id("username");
+    private By password = By.id("password");
+    private By loginButton = By.xpath("//button[contains(text(),'Login')]");
+    //By  closeButton = By.xpath("//button[contains(@class,'btn btn btn-mega')]");
 
 
-    public LoginPage(WebDriver driver){
+    public LoginPage(WebDriver driver) {
         this.driver = driver;
 
     }
 
 
-    public WebElement getemail(){
-     return driver.findElement((By) email);
+    public WebElement getemail() {
+        return driver.findElement((By) email);
     }
-    public WebElement getPassword(){
-      return driver.findElement((By) password);
+
+    public WebElement getPassword() {
+        return driver.findElement((By) password);
     }
-    public WebElement clickLoginButton(){
-       return driver.findElement((By) loginButton);
+
+    public WebElement clickLoginButton() {
+        return driver.findElement((By) loginButton);
     }
-   // public WebElement clickClose(){ return driver.findElement((By) closeButton);}
+    // public WebElement clickClose(){ return driver.findElement((By) closeButton);}
 
 
 }

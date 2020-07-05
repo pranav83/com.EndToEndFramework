@@ -13,7 +13,7 @@ import java.io.IOException;
 public class ValidateNavBar extends BaseClass {
     public static WebDriver driver;
     public static Logger log =  LogManager.getLogger(BaseClass.class.getName());
-    @BeforeMethod
+    @BeforeTest
     public void openBrowser() throws IOException {
         driver = intializeDriver();
         log.info("Driver is Intialize");
@@ -31,7 +31,7 @@ public class ValidateNavBar extends BaseClass {
 
 
     }
-    @AfterMethod
+    @AfterTest
     public void tearDown(){
         driver.quit();
     }

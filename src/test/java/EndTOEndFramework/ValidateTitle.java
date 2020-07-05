@@ -18,8 +18,9 @@ import java.io.IOException;
 public class ValidateTitle extends BaseClass {
     public static WebDriver driver;
    public static Logger log =  LogManager.getLogger(BaseClass.class.getName());
+    LandingPage lp = new LandingPage(driver);
 
-    @BeforeMethod
+    @BeforeTest
     public void openBrowser() throws IOException {
         driver = intializeDriver();
         log.info("Driver is Intialize");
@@ -29,13 +30,18 @@ public class ValidateTitle extends BaseClass {
     @Test
     public void titleValidate()  {
 
-        LandingPage lp = new LandingPage(driver);
+        lp = new LandingPage(driver);
         Assert.assertTrue(lp.gettitle().isDisplayed());
         log.info("Successfully Validated Title.");
-
-
     }
-    @AfterMethod
+    @Test
+    public void hello()  {
+
+        lp = new LandingPage(driver);
+        Assert.assertTrue(lp.hello().isDisplayed());
+        log.info("Successfully Validated Hello.");
+    }
+    @AfterTest
     public void tearDown(){
         driver.quit();
     }
